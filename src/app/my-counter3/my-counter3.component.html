@@ -1,3 +1,8 @@
-<p>
-my-counter3 works!
-</p>
+<h2>Modulo3</h2>
+<button id="increment" (click)="increment()">Increment</button>
+
+<div>Current Count: {{ count$ | async }}</div>
+
+<button id="decrement" (click)="decrement()">Decrement</button>
+
+<button id="reset" (click)="reset()">Reset Counter</button>

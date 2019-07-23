@@ -6,14 +6,13 @@ import { increment, decrement, reset } from '../counter.actions';
 @Component({
   selector: 'app-my-counter2',
   templateUrl: './my-counter2.component.html',
-  styleUrls: ['./my-counter2.component.scss'],
 })
 
 export class MyCounter2Component {
   count$: Observable<number>;
 
-  constructor(private store: Store<{ count: number }>) {
-    this.count$ = store.pipe(select('count'));
+  constructor(private store: Store<{ countM2: number }>) {
+    this.count$ = store.pipe(select('countM2'));
   }
 
   increment() {

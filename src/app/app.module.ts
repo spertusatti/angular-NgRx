@@ -16,7 +16,7 @@ import { counterReducer } from './counter.reducer';
       MyCounter1Module,
       MyCounter2Module,
       MyCounter3Module,
-      StoreModule.forRoot({ count: counterReducer })
+      // StoreModule.forRoot({ count: counterReducer })
     ],
     providers: [],
   bootstrap:    [ AppComponent ]
