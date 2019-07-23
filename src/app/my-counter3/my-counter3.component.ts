@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { incrementM3, decrementM3, resetM3 } from './m3.actions';
-import { incrementM11 } from '../my-counter1/store';
+import { incrementM11, M1Store } from '../my-counter1/store';
 
 @Component({
   selector: 'app-my-counter3',
@@ -10,9 +10,11 @@ import { incrementM11 } from '../my-counter1/store';
 })
 export class MyCounter3Component {
   count$: Observable<number>;
+  count1$: any;
 
   constructor(private store: Store<{ countM3: number }>) {
     this.count$ = store.pipe(select('countM3'));
+    this.count1$ = store.pipe(select(M1Store.Base)).pipe(select(M1Store.M11));
   }
 
   increment() {
