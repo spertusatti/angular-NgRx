@@ -1,5 +1,5 @@
 import { createAction } from '@ngrx/store';
 
-export const increment = createAction('[Counter Component] Increment');
-export const decrement = createAction('[Counter Component] Decrement');
-export const reset = createAction('[Counter Component] Reset');
+export const incrementM2 = createAction('[Counter Component] IncrementM2');
+export const decrementM2 = createAction('[Counter Component] DecrementM2');
+export const resetM2 = createAction('[Counter Component] ResetM2');

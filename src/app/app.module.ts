@@ -7,7 +7,6 @@ import { MyCounter2Module } from './my-counter2/my-counter2.module';
 import { MyCounter3Module } from './my-counter3/my-counter3.module';
 
 import { StoreModule } from '@ngrx/store';
-import { counterReducer } from './counter.reducer';
 
 @NgModule({
   declarations: [ AppComponent ],
@@ -16,7 +15,7 @@ import { counterReducer } from './counter.reducer';
       MyCounter1Module,
       MyCounter2Module,
       MyCounter3Module,
-      // StoreModule.forRoot({ count: counterReducer })
+      StoreModule.forRoot({}) // global state
     ],
     providers: [],
   bootstrap:    [ AppComponent ]

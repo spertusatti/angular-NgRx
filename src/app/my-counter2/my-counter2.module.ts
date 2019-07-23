@@ -4,7 +4,6 @@ import { MyCounter2Component } from './my-counter2.component';
 import { counterReducerM2 } from './m2.reducer';
 
 import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
 
 
 @NgModule({
@@ -13,8 +12,7 @@ import { EffectsModule } from '@ngrx/effects';
   ],
   imports: [
     CommonModule,
-    StoreModule.forFeature('countM3', counterReducerM2 ),
-    EffectsModule.forFeature([ShipsEffects])
+    StoreModule.forFeature('countM2', counterReducerM2)
   ],
   exports: [
     MyCounter2Component

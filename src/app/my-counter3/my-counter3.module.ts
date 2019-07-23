@@ -9,7 +9,7 @@ import { counterReducerM3 } from './m3.reducer';
   declarations: [MyCounter3Component],
   imports: [
     CommonModule,
-    StoreModule.forRoot({ countM3: counterReducerM3 })
+    StoreModule.forFeature('countM3', counterReducerM3)
   ],
   exports: [
     MyCounter3Component

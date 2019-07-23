@@ -1,7 +1,11 @@
-<h2>Modulo1</h2>
+<h2>Modulo1</h2> 
 <button id="increment" (click)="increment()">Increment</button>
+<button id="increment" (click)="incrementM2()">IncrementM2</button>
 
-<div>Current Count: {{ count$ | async }}</div>
+<div>Current Count state M1: {{ count$.select('m1') | async }}</div>
+<div>Current Count state M11: {{ count$.select('m11') | async }}</div>
+<div>Current Count state M2: {{ count2$ | async }}</div>
+<div>Current Count state M3: {{ count3$ | async }}</div>
 
 <button id="decrement" (click)="decrement()">Decrement</button>
 
