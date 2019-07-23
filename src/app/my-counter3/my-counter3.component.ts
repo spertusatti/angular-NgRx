@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { incrementM3, decrementM3, resetM3 } from './m3.actions';
-import { incrementM11 } from '../my-counter1/m11.actions';
+import { incrementM11 } from '../my-counter1/store';
 
 @Component({
   selector: 'app-my-counter3',
